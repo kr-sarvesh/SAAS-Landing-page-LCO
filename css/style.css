@@ -1,0 +1,256 @@
+:root {
+  --primary-color: #ba456a;
+  --secondary-color: #69d2e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+nav img {
+  height: 30px;
+  width: 90px;
+}
+nav ul {
+  position: relative;
+  left: 80px;
+  display: flex;
+  width: 500px;
+  height: 40px;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav ul li {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+nav ul li:hover {
+  border-bottom: 1px solid white;
+}
+.list-items .active {
+  color: var(--secondary-color);
+}
+
+nav .primary-btn {
+  width: 150px;
+  position: relative;
+  right: 100px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.section-container {
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 0px 140px;
+  padding-bottom: 50px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.text-container h1 {
+  width: 390px;
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  color: white;
+  height: 200px;
+}
+.text-container p {
+  color: white;
+  position: relative;
+  top: -60px;
+}
+.section-container img {
+  width: 800px;
+  height: 650px;
+  position: relative;
+  left: 80px;
+}
+/* mid section starts from here */
+
+[alt='saas-illustration'] {
+  width: 800px;
+  height: 650px;
+}
+.section-container-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.text-container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 50px;
+}
+.section-container-2 h1 {
+  font-size: 60px;
+}
+.section-container-2 .list-items {
+  list-style-type: none;
+  margin-top: 50px;
+  width: 600px;
+  position: relative;
+  top: -70px;
+  margin-left: 60px;
+}
+.section-container-2 .list-items .list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-items .fe1::before {
+  content: url(/icons/share-arrow.svg);
+  width: 30px;
+  height: 5px;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+
+.list-items .fe2::before {
+  content: url(/icons/share-arrow01.svg);
+  width: 30px;
+  height: 5px;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+
+.list-items .fe3::before {
+  content: url(/icons/share-arrow02.svg);
+  width: 30px;
+  height: 5px;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+
+.section-container-2 img {
+  position: relative;
+  left: 20px;
+}
+
+/* Feature for customer section starts from here */
+
+.feature-heading {
+  text-align: center;
+  width: 400px;
+  height: 80px;
+  font-size: 32px;
+  margin: 20px auto;
+}
+.card-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 200px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 60px;
+  gap: 40px;
+}
+.card-group .card {
+  height: 270px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  box-shadow: 2px 2px 6px -4px;
+  cursor: pointer;
+}
+
+.card-group .card .card-icon-1 {
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  opacity: 0.5;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.card .card-icon-1 img {
+  width: 50px;
+  height: 50px;
+}
+.card-title {
+  position: relative;
+  top: 28px;
+  left: 0.5px;
+  border-radius: 25px;
+}
+.card-title h2 {
+  margin-bottom: 10px;
+}
+.card-title P {
+  padding-bottom: 10px;
+}
+.card-title:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.card .card-icon-2 {
+  width: 100px;
+  height: 100px;
+  padding: 20px 5px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.card .card-icon-2 img {
+  width: 50px;
+  height: 50px;
+}
+
+.card .card-icon-3 {
+  width: 100px;
+  height: 100px;
+  padding: 30px 5px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.card .card-icon-3 img {
+  width: 50px;
+  height: 50px;
+}
+
+.card .card-icon-4 {
+  width: 100px;
+  height: 100px;
+  padding: 25px 5px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.card .card-icon-4 img {
+  width: 50px;
+  height: 50px;
+}
